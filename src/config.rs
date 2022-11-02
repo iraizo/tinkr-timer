@@ -7,7 +7,7 @@ pub struct Configuration {
     #[arg(long, env, required = true)]
     pub executeables: Vec<String>,
     // amount in minutes
-    #[arg(short, env, default_value = "210")]
+    #[arg(short, env, default_value = "90")]
     pub short_break: u16,
     // amount in minutes
     #[arg(short, env, default_value = "10")]

@@ -44,7 +44,7 @@ fn main() -> Result<()> {
 
     let mut r = rand::thread_rng();
     let short = Poisson::new(config.short_break.into()).unwrap();
-    let long = Poisson::new(0.0).unwrap();
+    let long = Poisson::new(config.long_break.into()).unwrap();
 
     loop {
         start_tinkr(&config, &mut tinkr_handles);
